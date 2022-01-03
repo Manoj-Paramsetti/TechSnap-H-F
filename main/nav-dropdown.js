@@ -18,10 +18,10 @@ if (scrollbar > 20) {
 
 }
 else {
-    document.getElementsByClassName('nav-bar-desktop')[0].style.background = "none";
+    document.getElementsByClassName('nav-bar-desktop')[0].style.background = "#1A191D";
     document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#FFF";
 
-    document.getElementsByClassName('mob-nav')[0].style.background = "none";
+    document.getElementsByClassName('mob-nav')[0].style.background = "#1A191D";
     document.getElementsByClassName('mob-nav')[0].style.color = "#fff";
 
     document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(0%)";
@@ -100,13 +100,12 @@ window.addEventListener('scroll', function (event) {
         document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#121212";
     }
     else {
-        document.getElementsByClassName('nav-bar-desktop')[0].style.background = "none";
+        document.getElementsByClassName('nav-bar-desktop')[0].style.background = "#1A191D";
         document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#FFF";
 
         document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(0%)";
 
-        document.getElementsByClassName('mob-nav')[0].style.background = "none";
+        document.getElementsByClassName('mob-nav')[0].style.background = "#1A191D";
         document.getElementsByClassName('mob-nav')[0].style.color = "#fff";
     }
 });
-

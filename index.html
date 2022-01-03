@@ -1308,42 +1308,8 @@
     } ).mount();
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 900,
-        offset: 220,
-        easing: 'ease-in-out-quad',
-    });
-    
-    const header = document.querySelector('.header');
-    const navLink = document.querySelectorAll('.nav_item');
-    const ham = document.querySelector('.ham');
-    
-    window.addEventListener('scroll', () => {
-        const top = window.innerHeight * (15 / 100);
-        if (window.scrollY <= top) {
-            header.style.background = 'rgb(26, 25, 29)';
-            ham.style.background ="transparent";
-            
-            header.style.height = '60px';
-            navLink.forEach((i) => {
-                i.style.color = '#fff';
-            });
-        }
-        if (window.scrollY > top) {
-            header.style.background = '#fff';
-            ham.style.background ="#0a33ec";
-            header.style.height = '60px';
-            navLink.forEach((i) => {
-                i.style.color = '#000';
-            });
-        }
-    });
-    
-</script>
 
-
-<script src="main/nav-dropdown.js"></script>
 </body>
+<script src="main/nav-dropdown.js"></script>
 
 </html>
