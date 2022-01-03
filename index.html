@@ -21,6 +21,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
+    
 <div class="mainBody">
 	<div class="nav-bar-desktop">
         <div class="desk-nav-frame">
@@ -1208,7 +1209,7 @@
         </script>
 <!-- Dummy height: to differntiate header and footer -->
 <div style="height: 100px;"></div>
-<!-- ----------------------------------------------------- -->
+<!-- ----------------------------------------------------- 
 <div class="footer_MainBox">
     <div class="Footer_page">
         <footer class="Footer_conatiner">
@@ -1290,63 +1291,64 @@
     </div>
 </div>
 
-</body>
 
 <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 <script>
-new Splide( '.splide', {
-	type   : 'loop',
-	autoplay: true,
-	pagination : false,
-	arrows     : false,
-	perPage    : 2,
-	perMove    : 1,
-	focus  : 'center',
-	autoplay: true,
-	gap    : '1rem',
-	breakpoints : {
-		'600': {
-	perPage : 1,
-	gap    : '1rem'
-		}
-	},
-} ).mount();
+    new Splide( '.splide', {
+        type   : 'loop',
+        autoplay: true,
+        pagination : false,
+        arrows     : false,
+        perPage    : 2,
+        perMove    : 1,
+        focus  : 'center',
+        autoplay: true,
+        gap    : '1rem',
+        breakpoints : {
+            '600': {
+                perPage : 1,
+                gap    : '1rem'
+            }
+        },
+    } ).mount();
 </script>
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init({
-			duration: 900,
-			offset: 220,
-			easing: 'ease-in-out-quad',
-		});
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 900,
+        offset: 220,
+        easing: 'ease-in-out-quad',
+    });
+    
+    const header = document.querySelector('.header');
+    const navLink = document.querySelectorAll('.nav_item');
+    const ham = document.querySelector('.ham');
+    
+    window.addEventListener('scroll', () => {
+        const top = window.innerHeight * (15 / 100);
+        if (window.scrollY <= top) {
+            header.style.background = 'rgb(26, 25, 29)';
+            ham.style.background ="transparent";
+            
+            header.style.height = '60px';
+            navLink.forEach((i) => {
+                i.style.color = '#fff';
+            });
+        }
+        if (window.scrollY > top) {
+            header.style.background = '#fff';
+            ham.style.background ="#0a33ec";
+            header.style.height = '60px';
+            navLink.forEach((i) => {
+                i.style.color = '#000';
+            });
+        }
+    });
+    
+</script>
 
-		const header = document.querySelector('.header');
-		const navLink = document.querySelectorAll('.nav_item');
-		const ham = document.querySelector('.ham');
-
-		window.addEventListener('scroll', () => {
-			const top = window.innerHeight * (15 / 100);
-			if (window.scrollY <= top) {
-				header.style.background = 'rgb(26, 25, 29)';
-				ham.style.background ="transparent";
-
-				header.style.height = '60px';
-				navLink.forEach((i) => {
-					i.style.color = '#fff';
-				});
-			}
-			if (window.scrollY > top) {
-				header.style.background = '#fff';
-				ham.style.background ="#0a33ec";
-				header.style.height = '60px';
-				navLink.forEach((i) => {
-					i.style.color = '#000';
-				});
-			}
-		});
-
-	</script>
-	
+-->	
 <script src="main/nav-dropdown.js"></script>
+</body>
 
 </html>

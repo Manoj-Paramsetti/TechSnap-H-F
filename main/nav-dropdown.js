@@ -6,30 +6,30 @@ const nav_priPage = document.getElementsByClassName('nav-priPage');
 
 var scrollbar = window.scrollY;
 
-if(scrollbar > 20){
+if (scrollbar > 20) {
     document.getElementsByClassName('mob-nav')[0].style.background = "#FFF";
-    document.getElementsByClassName('mob-nav')[0].style.color = "#1A191D";    
-    
-    document.getElementsByClassName('mob-nav-frame-right')[0].style.filer = "invert(100%)";  
-    
+    document.getElementsByClassName('mob-nav')[0].style.color = "#1A191D";
+
+    document.getElementsByClassName('mob-nav-frame-right')[0].style.filer = "invert(100%)";
+
     document.getElementsByClassName('nav-bar-desktop')[0].style.background = "#FFF";
     document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#121212";
-    
-    
+
+
 }
-else{
+else {
     document.getElementsByClassName('nav-bar-desktop')[0].style.background = "none";
-    document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#FFF";  
+    document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#FFF";
 
     document.getElementsByClassName('mob-nav')[0].style.background = "none";
     document.getElementsByClassName('mob-nav')[0].style.color = "#fff";
-    
+
     document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(0%)";
 
-        
+
 }
 
-function hideMobNavigationMenu(){
+function hideMobNavigationMenu() {
     nav_commPage[0].style.display = "none";
     nav_catPage[0].style.display = "none";
     nav_mainPage[0].style.display = "none";
@@ -37,7 +37,7 @@ function hideMobNavigationMenu(){
     nav_priPage[0].style.display = "none";
 }
 
-function showMobMainNavigationMenu(){
+function showMobMainNavigationMenu() {
     nav_commPage[0].style.display = "none";
     nav_catPage[0].style.display = "none";
     nav_mainPage[0].style.display = "block";
@@ -45,7 +45,7 @@ function showMobMainNavigationMenu(){
     nav_priPage[0].style.display = "none";
 }
 
-function showMobCatNavigationMenu(){
+function showMobCatNavigationMenu() {
     nav_commPage[0].style.display = "none";
     nav_catPage[0].style.display = "block";
     nav_mainPage[0].style.display = "block";
@@ -53,7 +53,7 @@ function showMobCatNavigationMenu(){
     nav_priPage[0].style.display = "none";
 }
 
-function showMobCommNavigationMenu(){
+function showMobCommNavigationMenu() {
     nav_commPage[0].style.display = "block";
     nav_catPage[0].style.display = "none";
     nav_mainPage[0].style.display = "block";
@@ -61,7 +61,7 @@ function showMobCommNavigationMenu(){
     nav_priPage[0].style.display = "none";
 }
 
-function showMobResNavigationMenu(){
+function showMobResNavigationMenu() {
     nav_commPage[0].style.display = "res";
     nav_catPage[0].style.display = "none";
     nav_mainPage[0].style.display = "block";
@@ -69,7 +69,7 @@ function showMobResNavigationMenu(){
     nav_priPage[0].style.display = "none";
 }
 
-function showMobPriNavigationMenu(){
+function showMobPriNavigationMenu() {
     nav_commPage[0].style.display = "none";
     nav_catPage[0].style.display = "none";
     nav_mainPage[0].style.display = "block";
@@ -77,9 +77,9 @@ function showMobPriNavigationMenu(){
     nav_priPage[0].style.display = "block";
 }
 
-window.addEventListener('resize', function(event){
+window.addEventListener('resize', function (event) {
     var newWidth = window.innerWidth;
-    if(newWidth < 600){
+    if (newWidth < 600) {
         nav_commPage[0].style.display = "none";
         nav_catPage[0].style.display = "none";
         nav_mainPage[0].style.display = "none";
@@ -88,18 +88,18 @@ window.addEventListener('resize', function(event){
     }
 });
 
-window.addEventListener('scroll', function(event){
+window.addEventListener('scroll', function (event) {
     var scrollbar = window.scrollY;
-    if(scrollbar > 20){
+    if (scrollbar > 20) {
         document.getElementsByClassName('mob-nav')[0].style.background = "#FFF";
         document.getElementsByClassName('mob-nav')[0].style.color = "#1A191D";
-        
+
         document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(100%)";
-        
+
         document.getElementsByClassName('nav-bar-desktop')[0].style.background = "#FFF";
         document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#121212";
     }
-    else{
+    else {
         document.getElementsByClassName('nav-bar-desktop')[0].style.background = "none";
         document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#FFF";
 
