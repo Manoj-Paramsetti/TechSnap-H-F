@@ -20,6 +20,10 @@
   display: none;
 }
 
+body{
+  background-color: #121211;
+}
+
 @media screen and (max-width: 820px) {
   .nav-mainPage {
     width: 100vw;
@@ -215,6 +219,7 @@
   position: fixed;
   display: flex;
   justify-content: center;
+  
 }
 
 .desk-nav-frame {
