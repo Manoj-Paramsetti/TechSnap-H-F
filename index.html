@@ -7,16 +7,10 @@
 		<!-- Aos styled_link -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<link rel="stylesheet" href="main/style4.css" />
-		<link rel="stylesheet" href="main/add.css" />
-		<link rel="stylesheet" href="main/navbar-mobile.css">
-		<link rel="stylesheet" href="main/navbar.css">
+		<link rel="stylesheet" href="main/navbarfooter.css">
 		<title>Techsnap</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-
+        
 		<link rel="shortcut icon" type="image/png" href="main/favicon.png"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
@@ -1208,8 +1202,10 @@
             });
         </script>
 <!-- Dummy height: to differntiate header and footer -->
-<div style="height: 100px;"></div>
-<!-- ----------------------------------------------------- 
+<div style="height: 100px; color: #FFF;">
+    jkweocmsdccop
+</div>
+<!-- ----------------------------------------------------- -->	
 <div class="footer_MainBox">
     <div class="Footer_page">
         <footer class="Footer_conatiner">
@@ -1262,9 +1258,8 @@
         <div class="join_our responsive">
             <p>Join our newsletter</p>
             <form class="input_holder" method="POST" action="{% url 'nextpage' %}">
-                {% csrf_token %}
-                <input type="text" name="email"/>
-                <button type="submit">Subscribe</button>
+                <input type="text" style="font-family: 'Montserrat', sans-serif; padding: 10px;" name="email"/>
+                <button type="submit" style="font-family: 'Montserrat', sans-serif; padding: 10px;">Subscribe</button>
             </form>
         </div>
         <div class="Privacy_holder">
@@ -1347,7 +1342,7 @@
     
 </script>
 
--->	
+
 <script src="main/nav-dropdown.js"></script>
 </body>
 
