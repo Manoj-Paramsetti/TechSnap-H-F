@@ -64,6 +64,7 @@ body{
     color: #999;
     align-items: center;
     font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .nav-footer-row-1 {
@@ -210,6 +211,7 @@ body{
 
 .mob-nav {
   display: none;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .nav-bar-desktop {
@@ -219,7 +221,7 @@ body{
   position: fixed;
   display: flex;
   justify-content: center;
-  
+  font-family: 'Montserrat', sans-serif;
 }
 
 .desk-nav-frame {
