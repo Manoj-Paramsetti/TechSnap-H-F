@@ -77,17 +77,6 @@ function showMobPriNavigationMenu() {
     nav_priPage[0].style.display = "block";
 }
 
-window.addEventListener('resize', function (event) {
-    var newWidth = window.innerWidth;
-    if (newWidth < 600) {
-        nav_commPage[0].style.display = "none";
-        nav_catPage[0].style.display = "none";
-        nav_mainPage[0].style.display = "none";
-        nav_resPage[0].style.display = "none";
-        nav_priPage[0].style.display = "none";
-    }
-});
-
 window.addEventListener('scroll', function (event) {
     var scrollbar = window.scrollY;
     if (scrollbar > 20) {
