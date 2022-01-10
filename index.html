@@ -7,7 +7,6 @@
 		<!-- Aos styled_link -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<link rel="stylesheet" href="main/body.css">
 		<link rel="stylesheet" href="main/navbarfooter.css">
 		<title>Techsnap</title>
 
@@ -1131,6 +1130,22 @@
         </div>
     </div>
 
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+        </script>
         <script>
             var dp1 = $(".catalog-dropdown-desk");
             var dp2 = $(".community-dropdown-desk");
@@ -1193,143 +1208,9 @@
             });
         </script>
 <!-- Dummy height: to differntiate header and footer -->
-<div>
-    <div class="nav-dummy"></div>
-    <div class="banner">
-        <div class="banner-left">
-            <h1>How to Become a Web Developer</h1>
-            <p>
-                BrainStation's Web Developer career guide is intended to help you take the first steps toward a lucrative career in web development. 
-                The guide provides an in-depth overview of the development skills you should learn, the best web development training options, career
-                paths in web development, how to become a Web Developer, and more.
-            </p>
-        </div>
-        <div class="banner-right">
-            <img src="https://dvrfp7vt6y4co.cloudfront.net/edb0f322-9882-4644-80bd-5f8818b10490/1x.webp"  height="200px"/>
-        </div>
-    </div>
-
-    <div class="content-body">
-        <div class="left-scroll">
-            <h1>Web Developer</h1>
-            <h2 class="collapsible flip">The Basics<p class="rotate-text">⌵</p></h2>
-            <div>
-                <h3>What Is Web Development? </h3>
-                <hr>
-            </div>
-
-            <h2 class="collapsible flip">On the Job<p class="rotate-text">⌵</p></h2>
-            <div>
-                <h3>What does a web developer do?</h3>
-                <h3>What tools do web developer use?</h3>
-                <h3>Do web developers work at home?</h3>
-                <hr>
-            </div>
-            <h1>
-                How to Become a Web
-                Developer
-            </h1>
-            <h2 class="collapsible flip">
-                Skills<p class="rotate-text">⌵</p>
-            </h2>
-            <div>
-                <h3>What Skills Do You Need to Be a Web Developer?</h3>
-                <h3>Are Coding Bootcamps Worth It?</h3>
-                <hr>
-            </div>
-            
-            <h2 class="collapsible flip">
-                Career path<p class="rotate-text">⌵</p>
-            </h2>
-            <div>
-                <h3>Is Web Development a Good Career?</h3>
-                <h3>How Hard Is It to Become a Web Developer?</h3>
-                <h3>How Much Do Web Developers Make?</h3>
-                <hr>
-            </div>
-            <h2 class="collapsible flip">
-                Sample<p class="rotate-text">⌵</p>
-            </h2>
-            <div>
-                <h3>Sample</h3>
-                <h3>Sample</h3>
-                <h3>Sample</h3>
-                <hr>
-            </div>
-        </div>
-        <div class="right-scroll">
-            <h1>How Do You Become a Web Developer?</h1>
-            <hr class="yellow-dash">
-            <p>To become a Web Developer, you should have an understanding of HTML, CSS, and JavaScript. It’s also recommended to learn about CSS and CSS frameworks. Developing these fundamental web development skills will give you the foundation and logic for communicating with programming languages.
-                <br>
-                <br>
-                How to become a Web Developer in five steps:
-                <br>
-                <br> 
-                1. <a href="">Learn web development fundamentals</a>
-                <br>
-                2. <a href="">Choose a development specialization</a>
-                <br>
-                3. <a href="">Learn key programming languages for web development</a>
-                <br>
-                4. <a href="">Work on projects to develop your Web Developer skills</a>
-                <br>
-                5. <a href="">Build a web development portfolio</a>
-            </p>
-
-            <h1>1. Learn Web Development Fundamentals</h1>
-            <hr class="yellow-dash">
-            <p>
-                The best first step to becoming a Web Developer is to start learning web development fundamentals, including an understanding of HTML (Hypertext Markup Language), CSS (Cascading Style Sheets), and JavaScript.
-                <br>
-                <br>Many aspiring Web Developers are now using coding bootcamps to fast-track the learning process. Coding bootcamps have thrived because they are short, immersive, and focused on outcomes and employment – their goal is to develop job-ready skills as efficiently as possible, making them an increasingly worthwhile investment for a would-be Web Developer. According to the job site Indeed, four out of five companies in the U.S. have hired a graduate from a coding bootcamp
-                <br>
-                <br>In fact, the practical advantages of coding bootcamps are only getting clearer over time. For one thing, the field of web development naturally attracts people from all other fields, many of them making mid-career transitions – people for whom a clear and efficient path to skills expansion is a top priority. Further, employers increasingly value skills and experience over education, placing anyone who can prove their abilities on more equal footing with Developers holding a college degree.
-                <br>
-                <br>It’s important to note that Web Developers – more than most other fields – must be committed to ongoing learning to stay on top of changes in web development and programming languages, tools, and trends. This makes mid-career retraining a must whether or not it’s the line of work you started out in.
-            </p>
-            
-            <h1>2. Choose a Development Specialization</h1>
-            <hr class="yellow-dash">
-            <p>
-                As you continue to grow your skills, you’ll need to choose an area of specialization. But what are the types of web development? All Web Developers are categorized into three main types:
-                <br>
-                <br><b>Front-End Developer:</b> A Front-End Developer works on the “client-side” of web development, meaning any portion of the site or app that users interact with. This can include a site’s layout, design, and the way users interact with it.
-                <br><b>Back-End Developer:</b> A Back-End Developer works on the “server-side” of web development. This is focused on the way a site functions and can include databases, servers, networks and hosting, and more.
-                <br><b>Full-Stack Developer:</b> A Full-Stack Developer is familiar with both front-and back-end development and works with both sides of a website.
-            </p>
-
-            <h1>3. Learn Key Programming Languages for Web Development</h1>
-            <hr class="yellow-dash">
-            <p>
-                Whatever your area of concentration, you’ll need to know how to use a handful of different programming languages for web development and web design. So, what are the most common programming languages?
-                <br>
-                <br>Three families of programming languages form the basic tools involved in virtually all aspects of web development:
-                <br>
-                <br>HTML (Hypertext Markup Language)
-                <br>CSS (Cascading Style Sheets)
-                <br>JavaScript
-                <br>
-                <br>Of course, the list goes on – these are just the beginning. In fact, web development is such a diverse and varied field that the list of all the tasks it can include (and all the coding languages and markup languages you might use to accomplish them) is too long to fit in this space. Fortunately, as a specialist, you can find and concentrate on the ones that work best for you.
-            </p>
-
-            <h1>4. Build Projects to Develop Your Web Developer Skills</h1>
-            <hr class="yellow-dash">
-            <p>
-                With a grasp of the basics in HTML, CSS, and JavaScript, and a foundation of programming skills, you’re ready to begin building. As you go, you’ll gain experience using an ever-growing set of Web Developer skills. Some of these are technical skills, or “hard” skills, like programming in SQL or Python, using the jQuery library of functions for more efficient programming, or using tools like Git for version control. The best way to improve these web development skills is simply to start messing around – the more you use them, the better you’ll be.
-                <br>
-                <img src="https://dvrfp7vt6y4co.cloudfront.net/17c69843-f1db-4670-bf58-5f04e4ef2e45/1x.webp" width="100%"/>
-                <br>There are also a number web design skills that are useful for Web Developers to have, with an understanding that responsive design is perhaps the most crucial. While Web Developers are not typically tasked with the overall site design, it’s an advantage for Developers to also have a solid understanding of common design principles. Front-End Developers, in particular, program the screens that users interact with – and they can be far more successful with a good grasp of user-centered design.
-            </p>
-
-        </div>
-    </div>
-
+<div style="height: 100px; color: #FFF;">
+    jkweocmsdccop
 </div>
-
-
-
-
 <!-- ----------------------------------------------------- -->	
 <div class="footer_MainBox">
     <div class="Footer_page">
@@ -1433,40 +1314,6 @@
     } ).mount();
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "" || content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        });
-    }
-
-    var flip = document.getElementsByClassName("flip");
-    var rot = document.getElementsByClassName("rotate-text");
-    console.log(flip);
-    var j; 
-    for (j = 0; j < flip.length; j++) {
-        flip[j].addEventListener("click", function() {
-            var r = this.childNodes[1];
-            console.log(r);
-            if (r.style.transform !== "rotate(0deg)" || r.style.transform === "") {
-                r.style.transform = "rotate(0deg)";
-            } else {
-                r.style.transform = "rotate(180deg)";
-            }
-        });
-    }
-</script>
-
 
 </body>
 <script src="main/nav-dropdown.js"></script>
